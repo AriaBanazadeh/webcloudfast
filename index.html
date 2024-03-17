@@ -36,28 +36,39 @@
                 <p>Explore our curated selection of eco-friendly travel experiences.</p>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <img src="destination1.jpg" alt="Destination 1" class="img-fluid rounded">
-                        <h4>Destination 1</h4>
-                        <p>Description of destination 1.</p>
+                        <img src="https://webbserverr.s3.eu-west-2.amazonaws.com/imagess/Colosseum.jpg" alt="Destination 1" class="img-fluid rounded">
+                        <h4>Colosseum</h4>
+                        <p>Italy</p>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <img src="destination2.jpg" alt="Destination 2" class="img-fluid rounded">
-                        <h4>Destination 2</h4>
-                        <p>Description of destination 2.</p>
+                        <img src="https://webbserverr.s3.eu-west-2.amazonaws.com/imagess/Eiffel+Tower.jpg" alt="Destination 2" class="img-fluid rounded">
+                        <h4>Eifell tower</h4>
+                        <p>Paris</p>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <img src="destination3.jpg" alt="Destination 3" class="img-fluid rounded">
-                        <h4>Destination 3</h4>
-                        <p>Description of destination 3.</p>
+                        <img src="https://webbserverr.s3.eu-west-2.amazonaws.com/imagess/Statue+of+Liberty.jpg" alt="Destination 3" class="img-fluid rounded">
+                        <h4>Statue of liberty</h4>
+                        <p>United states</p>
                     </div>
+		    <div class="col-md-4 mb-4">
+                        <img src="https://webbserverr.s3.eu-west-2.amazonaws.com/imagess/Petra.jpg" alt="Destination 4" class="img-fluid rounded">
+                        <h4>Petra</h4>
+                        <p>Jordan</p>
+                    </div>
+		    <div class="col-md-4 mb-4">
+                        <img src="https://webbserverr.s3.eu-west-2.amazonaws.com/imagess/Machu+Picchu.jpg" alt="Destination 5" class="img-fluid rounded">
+                        <h4>Machu Picchu</h4>
+                        <p>Peru<p>
+                    </div>
+
                 </div>
             </div>
             <div class="col-lg-4">
                 <h3>Newsletter Signup</h3>
-                <form id="newsletterForm">
+                <form id="newsletterForm" action="newsletter.php" method="GET">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input name="email" type="email" class="form-control" id="email" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
@@ -68,8 +79,6 @@
     <script src="https://webbserverr.s3.eu-west-2.amazonaws.com/js/bootstrap.bundle.min.js"> </script>
 	    <script>
         document.getElementById('newsletterForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // TODO: Handle form submission and database connection
             alert('Thank you for subscribing to our newsletter!');
         });
     </script>
