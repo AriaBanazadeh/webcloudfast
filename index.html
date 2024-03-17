@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Travel</title>
+        <link rel="stylesheet" href="https://webbserverr.s3.eu-west-2.amazonaws.com/css/bootstrap.min.css"> 
+	
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        .hero-image {
+            background: url('hero.jpg') no-repeat center;
+            background-size: cover;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Eco Travel</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero-image rounded mb-4"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>Discover Sustainable Destinations</h2>
+                <p>Explore our curated selection of eco-friendly travel experiences.</p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="destination1.jpg" alt="Destination 1" class="img-fluid rounded">
+                        <h4>Destination 1</h4>
+                        <p>Description of destination 1.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="destination2.jpg" alt="Destination 2" class="img-fluid rounded">
+                        <h4>Destination 2</h4>
+                        <p>Description of destination 2.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="destination3.jpg" alt="Destination 3" class="img-fluid rounded">
+                        <h4>Destination 3</h4>
+                        <p>Description of destination 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h3>Newsletter Signup</h3>
+                <form id="newsletterForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://webbserverr.s3.eu-west-2.amazonaws.com/js/bootstrap.bundle.min.js"> </script>
+	    <script>
+        document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // TODO: Handle form submission and database connection
+            alert('Thank you for subscribing to our newsletter!');
+        });
+    </script>
+</body>
+</html>
+
